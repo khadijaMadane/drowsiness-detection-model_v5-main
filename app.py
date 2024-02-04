@@ -8,8 +8,8 @@ from tensorflow.keras.models import load_model
 model = load_model('Model.h5')
 
 # Charger les classificateurs en cascade
-face_cascade = cv2.CascadeClassifier('haarcascade/haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier('haarcascade/haarcascade_eye.xml')
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
 # Configuration de la capture vidéo
 cap = cv2.VideoCapture(0)
