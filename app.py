@@ -36,8 +36,8 @@ with st.sidebar:
     stop_button = st.button('Arrêter', key='stop_button', help='Cliquer pour arrêter la détection')
 
 # Charger le son de l'alarme
-pygame.mixer.init()
-alarm_sound = pygame.mixer.Sound('Réveillez-vousréveillez-vous.ogg')
+#pygame.mixer.init()
+#alarm_sound = pygame.mixer.Sound('Réveillez-vousréveillez-vous.ogg')
 if start_button:
     while True:
         ret, frame = cap.read()
