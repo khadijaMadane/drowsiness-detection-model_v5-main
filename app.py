@@ -13,7 +13,10 @@ eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
 # Configuration de la capture vidéo
 cap = cv2.VideoCapture(0)
-
+# Vérifier si la caméra est ouverte avec succès
+if not cap.isOpened():
+    st.error("Impossible d'ouvrir la caméra. Veuillez vous assurer qu'une caméra est connectée.")
+    st.stop()
 # Initialisation des variables
 Score = 0
 alert_displayed = False
